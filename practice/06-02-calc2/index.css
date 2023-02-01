@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.sidebar{
+    background-color: orange;
+    width: 170px;
+    padding: 5px 15px;
+}
+
+.sidebar ul{
+    width: 100%;
+    padding: 0;
+}
+
+.sidebar ul li{
+    list-style: none;
+    padding: 5px 0;
+    color: #ffffff;
+    border-bottom: 1px dashed rgba(255,255,255,0.5);
+}
+
+.contents{
+    width: calc(100% - 170px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.item{
+    width: 24%;
+    height: 180px;
+    background-image: url("https://w.namu.la/s/5a858821eb2ed54fe712b6c42660b7e399ca93f130bcf9e0e9f7550457366fbdb1896f8f6ec9d5b656832996a4106f65097b440342eb0c4d1d9e23a491b14d966f9f02b86412c0f106b0e546115b00b9e744433a80eb493167a33497583fcbf50e6abf7a37c0974bbe8d861e1687a885");
+    background-size: cover;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-image: url("./img/banner.jpg");
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.text{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: textmove 1s ease-in-out;
+}
+
+@keyframes textmove{
+    0%{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    90%{
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
